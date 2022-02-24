@@ -1,0 +1,31 @@
+{
+    "name": "imanrjb/getblock-api",
+    "description": "getblock.io API for full nodes",
+    "keywords": [],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+
+    },
+    "authors": [
+        {
+            "name": "Iman Rajabi",
+            "email": "iman.rjb@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GetBlockApi\\": "src/"
+        }
+    },
+    "config": {
+        "platform-check": false
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GetBlockApi\\Src\\GetBlockApiServiceProvider"
+            ]
+        }
+    }
+}
