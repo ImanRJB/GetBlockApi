@@ -11,12 +11,16 @@ class JsonRpc
 
     public function __construct($url)
     {
+        if (substr($url, -1) != '/') {
+            $url = $url . '/';
+        }
         $this->api_key      = config('getblock.api_key');
         $this->url          = $url;
     }
 
     public function __call($method, $params)
     {
+//        return $params;
         $response = Http::withHeaders([
             'x-api-key' => $this->api_key,
             'Content-Type' => 'application/json'
