@@ -1,6 +1,6 @@
 <?php
 
-namespace GetBlockApi\Interface;
+namespace GetBlockApi\ApiInterface;
 
 use Illuminate\Support\Facades\Http;
 
